@@ -1,0 +1,41 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+  display: flex;
+}
+.letter-card{
+  // height: 40px;
+  // width: 40px;
+  margin: 10px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 1px rgb(180,180,180);
+}
+
+.btn-ghost {
+  text-decoration: none;
+  width: 200px;
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+input[type=text], select {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

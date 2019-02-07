@@ -1,0 +1,19 @@
+<h1>Countdown</h1>
+<p>Total score: <%= @my_score %></p>
+
+
+<div class="container">
+<% @letters.each do |x| %>
+ <div class="letter-card"><%=  x %></div>
+<%end%>
+</div>
+
+
+<p>What is the longest word you can find?</p>
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag 'letters', @letters %>
+  <input type="text" name="answer">
+  <br>
+  <input class="btn-ghost" type="submit" value="Ask!">
+</form>
